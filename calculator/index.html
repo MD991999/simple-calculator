@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculatorstyle.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="calculator">
+<form >
+    <input id="result"type="text" class="screen">
+</form>
+<div class="button">
+    <div class="first">
+<button type="button" class="btn-btn-firstRow1" data-num=""></button>
+<button type="button" class="btn-btn-firstRow1" onclick="Backspace()">Backspace</button>
+<button type="button" class="btn-btn-firstRow1" data-num="CE">CE</button>
+<button id="clear" type="button" class="btn-btn-firstRow1" onclick="allClear()">C</button></div>
+
+<p>
+    <button id="MC" type="button" class="btn-btn-firstRow" data-num="MC">MC</button>
+
+
+<button id="7"type="button" class="btn-btn-firstRow" onclick="display('7')">7</button>
+<button id="8"type="button" class="btn-btn-firstRow" onclick="display('8')">8</button>
+<button id="9"type="button" class="btn-btn-firstRow" onclick="display('9')">9</button>
+<button id="div"type="button" class="btn-btn-firstRow" onclick="display('/')">/</button>
+<button type="button" class="btn-btn-firstRow" data-num="sqrt">sqrt</button></p>
+
+<p><button id="MR" type="button" class="btn-btn-firstRow" data-num="MR">MR</button>
+<button id="4"type="button" class="btn-btn-firstRow" onclick="display('4')">4</button>
+<button id="5"type="button" class="btn-btn-firstRow" onclick="display('5')">5</button>
+<button id="6"type="button" class="btn-btn-firstRow" onclick="display('6')">6</button>
+<button id="mul"type="button" class="btn-btn-firstRow" onclick="display('*')">*</button>
+<button id=""type="button" class="btn-btn-firstRow" onclick="display('%')">%</button></p>
+
+<p><button id="MS" type="button" class="btn-btn-firstRow" data-num="MS">MS</button>
+<button id="1"type="button" class="btn-btn-firstRow" onclick="display('1')">1</button>
+<button id="2"type="button" class="btn-btn-firstRow" onclick="display('2')">2</button>
+<button id="3"type="button" class="btn-btn-firstRow" onclick="display('3')">3</button>
+<button id="sub"type="button" class="btn-btn-firstRow" onclick="display('-')">-</button>
+
+<button type="button" class="btn-btn-firstRow" data-num="1/x">1/x</button></p>
+<p><button id="Mplus" type="button" class="btn-btn-firstRow" data-num="M+">M+</button>
+<button id="0"type="button" class="btn-btn-firstRow" onclick="display('0')">0</button>
+<button type="button" class="btn-btn-firstRow" data-num="+/-">+/-</button>
+<button id="dot"type="button" class="btn-btn-firstRow" onclick="display('.')">.</button>
+<button id="add"type="button" class="btn-btn-firstRow" onclick="display('+')">+</button>
+<button id="equal"type="button" class="btn-btn-firstRow" onclick="output()">=</button></p>
+
+</div>
+
+
+
+   </div> 
+    <script src="calculatorjavascript.js" >
+
+
+
+    </script>
+</body>
+</html>

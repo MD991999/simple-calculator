@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    /* display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   */
+    /* vertical-align: middle; */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+     align-items: center;  
+}
+.calculator{
+    width:450px;
+    height:500px;
+   box-shadow: 9px 8px 30px rgba(0, 0, 0, 0.3);
+background-color: rgb(37, 37, 37);
+border-radius: 12px;
+}
+form input{
+width:100%;
+height:120px;
+border-radius: 10px;
+border:1px solid;
+background-color:cadetblue;
+color: white;
+text-align: right;
+/* we give the 32 property because we want our text to be shown in the right hand side of the screen. */
+pointer-events: none;
+/* 34th property makes our screen unclickable,ie noone could change our values by clicking on the screen */
+}
+.btn-btn-firstRow1{
+    width:95px;
+    height:50px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom:10px;
+    margin-left:10px;
+    font-size: 19px;
+    font-weight:bold;
+    background-color: rgb(16, 170, 236);
+color:crimson;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.btn-btn-firstRow{
+    width:60px;
+    height:50px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom:10px;
+    margin-left:10px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+#MC,#MR,#MS,#Mplus{
+    font-size: 18px;
+    font-weight:bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    background-color: darkmagenta;
+}
+#clear{
+    background-color: red;
+    color: white;
+}
